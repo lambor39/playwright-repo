@@ -6,6 +6,7 @@ pipeline {
             agent {
                 docker {
                     image 'openjdk:17-alpine'
+                    image 'maven:3.9.9-amazoncorretto-17-debian'
                     //reuseNote true
                 }
             }
