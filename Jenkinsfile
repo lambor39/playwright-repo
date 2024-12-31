@@ -12,6 +12,7 @@ pipeline {
             }
             steps {
                 sh '''
+                    mvn install
                     mvn compile exec:java -Dexec.mainClass="com.modern.firstProject.App" \
                 '''
             }
