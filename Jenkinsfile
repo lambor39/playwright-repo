@@ -2,9 +2,11 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Playwright run test') {
             steps {
-                echo 'Hello World'
+                sh '''
+                    mvn compile exec:java -Dexec.mainClass="com.modern.firstProject" \
+                '''
             }
         }
     }
