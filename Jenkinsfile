@@ -12,7 +12,7 @@ pipeline {
             }
             steps {
                 sh '''
-                    mvn compile exec:java -Dexec.mainClass="com.modern.firstProject" \
+                    mvn compile exec:java -Dexec.mainClass="com.modern.firstProject.App" \
                 '''
             }
         }
