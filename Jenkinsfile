@@ -6,7 +6,7 @@ pipeline {
             agent {
                 docker {
                     image 'openjdk:17-alpine'
-                    reuseNote true
+                    //reuseNote true
                 }
             }
             steps {
