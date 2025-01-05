@@ -3,7 +3,6 @@ pipeline {
 
     stages {
         stage('Playwright run test') {
-            /*
             agent {
                 docker {
                     image 'openjdk:17-alpine'
@@ -11,7 +10,6 @@ pipeline {
                     //reuseNote true
                 }
             }
-            */
             steps {
                 sh '''
                     mvn install
