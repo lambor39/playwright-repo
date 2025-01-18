@@ -1,12 +1,16 @@
 package com.modern.firstProject;
+
 import java.util.HashMap;
 import java.util.Map;
+
+import org.testng.annotations.Test;
 
 import com.modern.firstProject.commom.CommonHelper;
 import com.modern.firstProject.proceed.website.inputPage;
 
-public class App {
-    public static void main(String[] args) {
+public class modernTest {
+    @Test
+    public void test01(){
         boolean isOpened = CommonHelper.openBrowser("",false,true);
         if(!isOpened){
             System.out.println("Browser not open");
@@ -20,6 +24,7 @@ public class App {
                 CommonHelper.closeBrowser();  
             }
         }
-        //System.out.println(CommonHelper.convertStringToBoolean(outputMap.get("result")));
+        System.out.println(CommonHelper.convertStringToBoolean(outputMap.get("result")));
     }
+
 }
