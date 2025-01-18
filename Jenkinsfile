@@ -2,9 +2,19 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Playwright run test') {
+            agent {
+                docker {
+                    image 'openjdk:17-alpine'
+                    image 'maven:3.9.9-amazoncorretto-17-debian'
+                    //reuseNote true
+                }
+            }
             steps {
-                echo 'Hello World'
+                sh '''
+                    mvn install
+                    mvn compile exec:java -Dexec.mainClass="com.modern.firstProject.App" \
+                '''
             }
         }
     }
