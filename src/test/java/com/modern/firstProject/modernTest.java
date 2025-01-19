@@ -11,7 +11,7 @@ import com.modern.firstProject.proceed.website.inputPage;
 public class modernTest {
     @Test
     public void test01(){
-        boolean isOpened = CommonHelper.openBrowser("",true,true);
+        boolean isOpened = CommonHelper.openBrowser("",false,true);
         if(!isOpened){
             System.out.println("Browser not open");
         }
