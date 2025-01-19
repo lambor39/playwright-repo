@@ -7,6 +7,7 @@ import com.modern.firstProject.proceed.website.inputPage;
 
 public class App {
     public static void main(String[] args) {
+        /*
         boolean isOpened = CommonHelper.openBrowser("",false,true);
         if(!isOpened){
             System.out.println("Browser not open");
@@ -20,6 +21,7 @@ public class App {
                 CommonHelper.closeBrowser();  
             }
         }
-        //System.out.println(CommonHelper.convertStringToBoolean(outputMap.get("result")));
+        System.out.println(CommonHelper.convertStringToBoolean(outputMap.get("result")));
+        */
     }
 }

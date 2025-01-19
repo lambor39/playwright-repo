@@ -15,7 +15,7 @@ pipeline {
         stage('Run Test') {
             steps {
                 sh  '''
-                        mvn clean test
+                        mvn clean test -DtargetBrowser= -DisRunWithHeadless=yes -DisMaximumMode=yes
                 '''
             }
         }
