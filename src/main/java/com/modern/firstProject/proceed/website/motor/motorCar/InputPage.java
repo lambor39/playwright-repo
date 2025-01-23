@@ -1,4 +1,4 @@
-package com.modern.firstProject.proceed.website;
+package com.modern.firstProject.proceed.website.motor.motorCar;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -7,7 +7,7 @@ import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.modern.firstProject.commom.CommonHelper;
 
-public class inputPage {
+public class InputPage {
     Page page = CommonHelper.getPage();
 
     public Map<String,String> start(){
