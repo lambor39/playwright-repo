@@ -1,5 +1,5 @@
 package com.modern.firstProject.proceed.website.motor.motorCar;
 
-public class DefaultValues {
+public class MotorCar_00_DefaultValues {
     
 }

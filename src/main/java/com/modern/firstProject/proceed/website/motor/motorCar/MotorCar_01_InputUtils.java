@@ -7,11 +7,11 @@ import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.modern.firstProject.commom.CommonHelper;
 
-public class InputPage {
+public class MotorCar_01_InputUtils {
     Page page = CommonHelper.getPage();
 
     public Map<String,String> start(){
-        boolean result = false;
+        Boolean result = false;
         Map<String,String> outputMap = new HashMap<String,String>();
         outputMap.put("result", CommonHelper.convertBooleanToString(result));
         Map<String,String> inputCmsProductMap = inputCmsProduct();
@@ -164,7 +164,7 @@ public class InputPage {
         return outputMap;
     }
     public Map<String,String> inputCmsProduct(){
-        boolean result = false;
+        Boolean result = false;
         Map<String,String> outputMap = new HashMap<String,String>();
         outputMap.put("result", CommonHelper.convertBooleanToString(result));
         Locator productLocatorOutput = CommonHelper.getLocatorWithAttributeName(
@@ -180,7 +180,7 @@ public class InputPage {
         return outputMap;
     }
     public Map<String,String> inputLanguage(){
-        boolean result = false;
+        Boolean result = false;
         Map<String,String> outputMap = new HashMap<String,String>();
         outputMap.put("result", CommonHelper.convertBooleanToString(result));
         Locator languageLocator = CommonHelper.getLocator("#btn-select-language");
@@ -198,7 +198,7 @@ public class InputPage {
         return outputMap;
     }
     public Map<String,String> inputMake(){
-        boolean result = false;
+        Boolean result = false;
         Map<String,String> outputMap = new HashMap<String,String>();
         outputMap.put("result", CommonHelper.convertBooleanToString(result));
         Locator makeLocator = CommonHelper.getLocator(CommonHelper.makeDataSeleniumNameTag("carBrand"));
@@ -215,7 +215,7 @@ public class InputPage {
         return outputMap;
     }
     public Map<String,String> inputModel(){
-        boolean result = false;
+        Boolean result = false;
         Map<String,String> outputMap = new HashMap<String,String>();
         outputMap.put("result", CommonHelper.convertBooleanToString(result));
         Locator modelItemLocator = CommonHelper.getLocatorWithAttributeNameRandom(
@@ -230,7 +230,7 @@ public class InputPage {
         return outputMap;
     }
     public Map<String,String> inputModelYear(){
-        boolean result = false;
+        Boolean result = false;
         Map<String,String> outputMap = new HashMap<String,String>();
         outputMap.put("result", CommonHelper.convertBooleanToString(result));
         Locator modelYearItemLocator = CommonHelper.getLocatorWithAttributeNameRandom(
@@ -245,7 +245,7 @@ public class InputPage {
         return outputMap;
     }
     public Map<String,String> inputSubModel(){
-        boolean result = false;
+        Boolean result = false;
         Map<String,String> outputMap = new HashMap<String,String>();
         outputMap.put("result", CommonHelper.convertBooleanToString(result));
         Locator subModelItemLocator = CommonHelper.getLocatorWithAttributeNameRandom(
@@ -260,7 +260,7 @@ public class InputPage {
         return outputMap;
     }
     public Map<String,String> inputCarCamera(){
-        boolean result = false;
+        Boolean result = false;
         Map<String,String> outputMap = new HashMap<String,String>();
         outputMap.put("result", CommonHelper.convertBooleanToString(result));
         Locator carCameraItemLocator = CommonHelper.getLocatorWithAttributeNameRandom(
@@ -275,7 +275,7 @@ public class InputPage {
         return outputMap;
     }
     public Map<String,String> inputOdoMeter(){
-        boolean result = false;
+        Boolean result = false;
         Map<String,String> outputMap = new HashMap<String,String>();
         outputMap.put("result", CommonHelper.convertBooleanToString(result));
         Locator odoMeterABTestingLocator = CommonHelper.getLocator(CommonHelper.makeDataSeleniumNameTag("ODOmeter-version"));
@@ -297,7 +297,7 @@ public class InputPage {
         return outputMap;
     }
     public Map<String,String> inputOdoMeterA(){
-        boolean result = false;
+        Boolean result = false;
         Map<String,String> outputMap = new HashMap<String,String>();
         outputMap.put("result", CommonHelper.convertBooleanToString(result));
         CommonHelper.selectedSliderLocatorV1(CommonHelper.getLocator(CommonHelper.makeDataSeleniumNameTag("ODOmeter-step")),15,true);
@@ -308,7 +308,7 @@ public class InputPage {
         return outputMap;
     }
     public Map<String,String> inputOdoMeterB(){
-        boolean result = false;
+        Boolean result = false;
         Map<String,String> outputMap = new HashMap<String,String>();
         outputMap.put("result", CommonHelper.convertBooleanToString(result));
         Locator odoMeterLocator = CommonHelper.getLocator(CommonHelper.makeDataSeleniumNameTag("ODOmeter_dropdown"));
@@ -325,7 +325,7 @@ public class InputPage {
         return outputMap;
     }
     public Map<String,String> inputCarUsage(){
-        boolean result = false;
+        Boolean result = false;
         Map<String,String> outputMap = new HashMap<String,String>();
         String whichType = "";
         outputMap.put("result", CommonHelper.convertBooleanToString(result));
@@ -344,7 +344,7 @@ public class InputPage {
         return outputMap;
     }
     public Map<String,String> inputCommercialCarUsage(){
-        boolean result = false;
+        Boolean result = false;
         Map<String,String> outputMap = new HashMap<String,String>();
         outputMap.put("result", CommonHelper.convertBooleanToString(result));
         Locator rideShareLocator = CommonHelper.getLocatorWithAttributeNameRandom(
@@ -352,7 +352,7 @@ public class InputPage {
             "",
             "data-selenium-value"
             );
-        boolean selectedValue = CommonHelper.convertStringToBoolean(CommonHelper.getValueFromAttributeName(rideShareLocator, "data-selenium-value"));
+        Boolean selectedValue = CommonHelper.convertStringToBoolean(CommonHelper.getValueFromAttributeName(rideShareLocator, "data-selenium-value"));
         CommonHelper.clickLocator(rideShareLocator);
         if(!selectedValue){
             Locator rentalVehicleLocator = CommonHelper.getLocatorWithAttributeNameRandom(
@@ -399,7 +399,7 @@ public class InputPage {
         return outputMap;
     }
     public Map<String,String> inputFrequencyOfCarUse(){
-        boolean result = false;
+        Boolean result = false;
         Map<String,String> outputMap = new HashMap<String,String>();
         outputMap.put("result", CommonHelper.convertBooleanToString(result));
         Locator frequencyOfCarUseItemLocator = CommonHelper.getLocatorWithAttributeNameRandom(
@@ -414,7 +414,7 @@ public class InputPage {
         return outputMap;
     }
     public Map<String,String> inputClaim(){
-        boolean result = false;
+        Boolean result = false;
         Map<String,String> outputMap = new HashMap<String,String>();
         outputMap.put("result", CommonHelper.convertBooleanToString(result));
         Locator claimItemLocator = CommonHelper.getLocatorWithAttributeNameRandom(
@@ -429,7 +429,7 @@ public class InputPage {
         return outputMap;
     }
     public Map<String,String> inputUnderFinance(){
-        boolean result = false;
+        Boolean result = false;
         Map<String,String> outputMap = new HashMap<String,String>();
         outputMap.put("result", CommonHelper.convertBooleanToString(result));
         Locator underFinanceItemLocator = CommonHelper.getLocatorWithAttributeNameRandom(
@@ -444,7 +444,7 @@ public class InputPage {
         return outputMap;
     }
     public Map<String,String> inputMaritalStatus(){
-        boolean result = false;
+        Boolean result = false;
         Map<String,String> outputMap = new HashMap<String,String>();
         outputMap.put("result", CommonHelper.convertBooleanToString(result));
         Locator MaritalStatusItemLocator = CommonHelper.getLocatorWithAttributeNameRandom(
@@ -459,7 +459,7 @@ public class InputPage {
         return outputMap;
     }
     public Map<String,String> inputDateOfBirth(){
-        boolean result = false;
+        Boolean result = false;
         Map<String,String> outputMap = new HashMap<String,String>();
         outputMap.put("result", CommonHelper.convertBooleanToString(result));
         CommonHelper.inputTextLocator(CommonHelper.getLocator(CommonHelper.makeDataSeleniumNameTag("dd-dob")),"01");
@@ -472,7 +472,7 @@ public class InputPage {
         return outputMap;
     }
     public Map<String,String> inputDrivingExperience(){
-        boolean result = false;
+        Boolean result = false;
         Map<String,String> outputMap = new HashMap<String,String>();
         outputMap.put("result", CommonHelper.convertBooleanToString(result));
         Locator drivingExperienceItemLocator = CommonHelper.getLocatorWithAttributeNameRandom(
@@ -487,7 +487,7 @@ public class InputPage {
         return outputMap;
     }
     public Map<String,String> inputPostalCode(){
-        boolean result = false;
+        Boolean result = false;
         Map<String,String> outputMap = new HashMap<String,String>();
         outputMap.put("result", CommonHelper.convertBooleanToString(result));
         CommonHelper.inputTextLocator(CommonHelper.getLocator(CommonHelper.makeDataSeleniumNameTag("quotePostalCode")),"10110");
@@ -498,7 +498,7 @@ public class InputPage {
         return outputMap;
     }
     public Map<String,String> inputNCB(){
-        boolean result = false;
+        Boolean result = false;
         Map<String,String> outputMap = new HashMap<String,String>();
         outputMap.put("result", CommonHelper.convertBooleanToString(result));
         Locator ncbItemLocator = CommonHelper.getLocatorWithAttributeNameRandom(
@@ -513,7 +513,7 @@ public class InputPage {
         return outputMap;
     }
     public Map<String,String> inputPolicyStart(){
-        boolean result = false;
+        Boolean result = false;
         Map<String,String> outputMap = new HashMap<String,String>();
         outputMap.put("result", CommonHelper.convertBooleanToString(result));
         Locator policyStartItemLocator = CommonHelper.getLocatorWithAttributeNameRandom(
@@ -528,7 +528,7 @@ public class InputPage {
         return outputMap;
     }
     public Map<String,String> selectedGetQuoteButton(){
-        boolean result = false;
+        Boolean result = false;
         Map<String,String> outputMap = new HashMap<String,String>();
         outputMap.put("result", CommonHelper.convertBooleanToString(result));
         CommonHelper.clickLocator(CommonHelper.getLocator(CommonHelper.makeDataSeleniumNameTag("getQuote")));
