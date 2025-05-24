@@ -60,7 +60,7 @@ public class CommonHelper {
                 browser = playwright.webkit().launch(new BrowserType.LaunchOptions().setHeadless(isRunWithHeadless));                
                 break;
             default:
-                browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setChannel("msedge").setHeadless(isRunWithHeadless));
+                browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(isRunWithHeadless));
                 break;
         }
         getActualScreenSize();

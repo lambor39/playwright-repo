@@ -19,8 +19,7 @@ public class Page_01_InputTest {
 
     @Test
     public void input() {
-        ExcelUtils.main();
-        /*
+        //ExcelUtils.main();
         Map<String, String> outputMap = new HashMap<String, String>();
         if (Page_00_CarryValues.isBrowserOpened) {
             CommonHelper.navigateToTargetPage("https://www.roojai.com/");
@@ -30,6 +29,5 @@ public class Page_01_InputTest {
         }
         Page_00_CarryValues.mapResultPage.put("input_page",
                 CommonHelper.convertStringToBoolean(outputMap.get("result")));
-                */
     }
 }
