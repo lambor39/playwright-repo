@@ -282,7 +282,7 @@ public class MotorCar_01_InputUtils {
         String abTestingValue = CommonHelper.getValueFromAttributeName(odoMeterABTestingLocator, "data-selenium-value").toUpperCase();
         switch (abTestingValue) {
             case "A":
-                outputMap = inputOdoMeterA();
+                outputMap = inputOdoMeterB();
                 break;
             case "B":
                 outputMap = inputOdoMeterB();
