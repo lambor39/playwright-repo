@@ -35,7 +35,12 @@ public class CommonHelper {
     }
     public static Map<String,Integer> getActualScreenSize(){
         Map<String,Integer> outputMap = new HashMap<String,Integer>();
-        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        Dimension screenSize;
+        if(GraphicsEnvironment.isHeadless()){
+            screenSize = new Dimension(1920, 1080);
+        }else{
+            screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        }
         screenWidth = screenSize.width;
         screenHeight = screenSize.height;
         outputMap.put("screenWidth", screenWidth);
