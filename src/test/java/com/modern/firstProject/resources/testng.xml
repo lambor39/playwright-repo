@@ -3,9 +3,9 @@
     <test name="MotorCarTest">
         <classes>
             <class name="com.modern.firstProject.motor.motorCar.Page_01_InputTest"/>
+            <class name="com.modern.firstProject.motor.motorCar.Page_99_VerifyTest"/>
             <!--
             <class name="com.modern.firstProject.motor.motorCar.Page_02_QrpTest"/>
-            <class name="com.modern.firstProject.motor.motorCar.Page_99_VerifyTest"/>
             !-->
         </classes>
     </test>
